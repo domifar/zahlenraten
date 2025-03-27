@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahlenraten Spiel</title>
+    <link rel="stylesheet" href="GuessingStyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js"></script> <!-- Konfetti-Bibliothek -->
+</head>
+<body>
+    <div class="game-container">
+        <div class="game">
+            <h1>Zahlenraten Spiel</h1>
+            <p>Errate die Zahl zwischen 1 und 100!</p>
+            <input type="number" id="guess" placeholder="Deine Zahl...">
+            <button onclick="checkGuess()">Überprüfen</button>
+            <button onclick="resetGame()">Neustart</button>
+            <p id="message"></p>
+        </div>
+    </div>
+    <canvas id="confetti-canvas"></canvas>
+    <script src="GuessingLogic.js"></script>
+</body>
+</html>
